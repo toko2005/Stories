@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lil' histories</title>
+    <script type="text/javascript">
+      // New colour
+      var ako = document.getElementById("ako");
+
+      // Restore
+      function changeColor() {
+        var elem = ako;
+        var color = document.getElementById("laino").value;
+        elem.style.color = color;
+      }
+
+      // Return old colour
+      function restoreColorAndFont(oldColor) {
+        var elem = ako;
+        var oldColor = document.getElementById("laino").value;
+        elem.style.color = oldColor;
+        elem.style.fontFamily = Arial;
+      }
+
+      // New color mk.2
+      function changeColor2() {
+        var elem = ako;
+        var color = document.getElementById("laino").value;
+        elem.style.color = color;
+      }
+      // Fontchanger
+      function FontChanger() {
+        var elem = ako;
+        var font = document.getElementById("laino").value;
+        elem.style.fontFamily = font;
+      }
+
+      function FontSizeChanger() {
+        var elem = ako;
+        var font = document.getElementById("laino").value;
+        elem.style.fontSize = font;
+      }
+      function OwneraNaScriptaLeftwa() {
+        var elem = ako;
+        elem.innerHTML("Qj mi kura");
+      }
+    </script>
+  </head>
+  <!-- Styling shit about somethings -->
+  <style media="screen">
+    /* Body stuff */
+    body {
+      text-align: center;
+      margin: 0px;
+    }
+
+    /* The image */
+    .heading {
+      margin-top: -24px;
+      width: 1920px;
+      height: 1080px;
+      background-image: url("http://www.kinyu-z.net/data/wallpapers/229/1504648.jpg");
+      color: white;
+    }
+
+
+    /* Buttons */
+    .buttons {
+      background-color: rgb(128, 128, 128);
+    }
+  </style>
+  <!-- script -->
+  <body>
+    <div class="heading">
+        <h1 class="art"><br><br><br><br><br><br><br><br><br><br><br><br>Little hisroties</h1>
+        <h2>Always here to warm your heart</h2>
+    </div>
+    <div class="codingstuff">
+      <hr>
+      <div className="buttons">
+        <button onclick="restoreColorAndFont();">Restore</button>
+        <button onclick="changeColor()">Change to text</button>
+        <button onclick="FontChanger()">Pi6ka</button>
+        <button onclick="FontSizeChanger()">Patlak</button>
+        <button onclick="OwneraNaScriptaLeftwa()">NAI GOLEMIQ KUR</button>
+      </div>
+      <input type="text" value="Insert color..." id="laino">
+      <p id="ako">Text to change</p>
+      <hr>
+      <div class="content">
+        <div class="upperContent">
+          <div class="upperContentLeft">
+            <p></p>
+          </div>
+          <div class="upperContentRight">
+
+          </div>
+        </div>
+        <div class="lowerContent">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
